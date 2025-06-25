@@ -28,9 +28,9 @@ while not is_game_over:
     print(logo)
     if score!=0:
         print(f"You're right! Current score: {score}")
-    print(f"Compare A: {a["name"]}, a {a["description"]}, from {a["country"]}")
+    print(f"Compare A: {a['name']}, a {a['description']}, from {a['country']}")
     print(vs)
-    print(f"Against B: {b["name"]}, a {b["description"]}, from {b["country"]}")
+    print(f"Against B: {b['name']}, a {b['description']}, from {b['country']}")
     guess=input("Who has more followers? Type 'A' or 'B': ").lower()
     result=a["follower_count"]>b["follower_count"]
     if (guess=='a' and result) or (guess=='b' and not result):
@@ -46,6 +46,3 @@ while not is_game_over:
         print(f"You win. Final score: {score}")
         break
     p_list.append(b)
-
-
-
